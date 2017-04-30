@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories{
+	mavenCentral()
+}
+
+dependencies {
+
+}
+
+jar{
+	manifest{
+		attributes 'Main-Class': 'io.github.technomancers.HelloWorld',
+			'Classpath': '.'
+	}
+}
